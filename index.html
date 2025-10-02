@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emre Ayalp</title>
+    <meta name="description" content="Website of Emre Ayalp – Business Administration student at the University of Münster.">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Emre Ayalp – Website">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Exploring the intersection of business, AI and strategy – Welcome to Emre Ayalp’s site.">
+    <meta property="og:url" content="https://emreayalp.com/">
+    <meta property="og:image" content="https://emreayalp.com/preview.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Favicon-->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Inter Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+	<link rel="stylesheet" href="/style.css">
+
+    <!-- Dark Mode Script (keine Änderungen hier) -->
+    <script>
+        // Funktion, um das Theme zu setzen
+        function applyTheme() {
+            if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="page-container">
+        <main class="main-content">
+            <h1 class="main-heading">
+                Hey, I'm Emre
+            </h1>
+            <p class="subtitle">
+                Business student at the <a href="https://www.uni-muenster.de/en/"><span class="highlight">University of
+                        Münster</span></a>,
+                interested in <br> consulting, startups, and AI.
+            </p>
+
+            <div class="link-container">
+                <a href="mailto:emreayalp@outlook.de" class="styled-link">Mail</a>
+                <a href="https://www.linkedin.com/in/emreayalp/" target="_blank" rel="noreferrer" class="styled-link">LinkedIn</a>
+                <a href="https://github.com/" target="_blank" rel="noreferrer" class="styled-link">GitHub</a>
+            </div>
+        </main>
+    </div>
+
+
+</body>
+
+</html>
+

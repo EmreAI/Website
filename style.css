@@ -1,0 +1,114 @@
+/* === Grundlegende Stile & Dark Mode === */
+:root {
+    --bg-light: #ffffff;
+    --text-light: #111827;
+    --text-secondary-light: #6b7280;
+    --border-light: #d1d5db;
+    --bg-hover-light: #f3f4f6;
+
+    --bg-dark: #111827;
+    --text-dark: #ffffff;
+    --text-secondary-dark: #d1d5db;
+    --border-dark: #374151;
+    --bg-hover-dark: #374151;
+}
+
+.dark {
+    --bg-light: var(--bg-dark);
+    --text-light: var(--text-dark);
+    --text-secondary-light: var(--text-secondary-dark);
+    --border-light: var(--border-dark);
+    --bg-hover-light: var(--bg-hover-dark);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* === Hauptlayout === */
+.page-container {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 0 1.5rem;
+}
+
+.main-content {
+    text-align: center;
+    max-width: 42rem;
+}
+
+/* === Typografie === */
+.main-heading {
+    font-size: 1.875rem;
+    /* 3xl */
+    font-weight: 600;
+    /* font-semibold */
+    letter-spacing: -0.025em;
+    /* tracking-tight */
+}
+
+.subtitle {
+    margin-top: 0.75rem;
+    /* mt-3 */
+    font-size: 1rem;
+    /* text-base */
+    color: var(--text-secondary-light);
+    line-height: 1.625;
+    /* leading-relaxed */
+}
+
+.subtitle .highlight {
+    font-weight: 600;
+    /* font-semibold */
+    color: var(--text-light);
+}
+
+@media (min-width: 768px) {
+
+    /* md breakpoint */
+    .main-heading {
+        font-size: 2.25rem;
+        /* md:text-4xl */
+    }
+
+    .subtitle {
+        font-size: 1.125rem;
+        /* md:text-lg */
+    }
+}
+
+/* === Buttons / Links === */
+.link-container {
+    margin-top: 1.5rem;
+    /* mt-6 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    /* gap-3 */
+}
+
+.styled-link {
+    font-size: 0.875rem;
+    /* text-sm */
+    border-radius: 9999px;
+    /* rounded-full */
+    padding: 0.625rem 1.25rem;
+    /* px-5 py-2.5 */
+    border: 1px solid var(--border-light);
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.styled-link:hover {
+    background-color: var(--bg-hover-light);
+}
+
